@@ -68,3 +68,8 @@ When created an event, it will expose:
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/saribe/listenerjs/badge.svg?style=beer-square)](https://beerpay.io/saribe/listenerjs)  [![Beerpay](https://beerpay.io/saribe/listenerjs/make-wish.svg?style=flat-square)](https://beerpay.io/saribe/listenerjs?focus=wish)
