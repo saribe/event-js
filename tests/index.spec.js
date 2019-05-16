@@ -133,4 +133,15 @@ describe('Event call', () => {
 
         expect(mockCallback1.mock.calls.length).toBe(2);
     });
+
+    it('Disposable subscription', () => {
+        const event = createEvent();
+        const mockCallback = jest.fn();
+
+        event.once(mockCallback);
+        event.dispatch();
+        event.dispatch();
+
+        expect(mockCallback.mock.calls.length).toBe(1);
+    });
 });

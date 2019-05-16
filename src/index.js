@@ -1,12 +1,22 @@
-export function createEvent () {
+export function createEvent() {
     let subscribers = [];
 
     return {
         addListener,
         dispatch,
+        once,
     };
 
-    function addListener (callback, context) {
+    function once(callback, context) {
+        return addListener(fn, context);
+
+        function fn(...args) {
+            callback.apply(context, args);
+            unsubscribe(fn, context);
+        }
+    }
+
+    function addListener(callback, context) {
         subscribers.push({ callback, context });
 
         return {
@@ -14,11 +24,11 @@ export function createEvent () {
         };
     }
 
-    function dispatch (...args) {
+    function dispatch(...args) {
         subscribers.forEach(({ callback, context }) => callback.apply(context, args));
     }
 
-    function unsubscribe (cb, cx) {
+    function unsubscribe(cb, cx) {
         subscribers = subscribers
             .filter(({ callback, context }) => callback !== cb || context !== cx);
     }
