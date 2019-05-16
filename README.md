@@ -1,11 +1,11 @@
 # listenerjs 
- [![Beerpay](https://beerpay.io/saribe/listenerjs/badge.svg?style=beer)](https://beerpay.io/saribe/listenerjs) [![Build Status](https://badgen.net/circleci/github/saribe/listenerjs)](https://circleci.com/gh/saribe/listenerjs) 
+[![Beerpay](https://beerpay.io/saribe/listenerjs/badge.svg?style=beer-square)](https://beerpay.io/saribe/listenerjs) [![Beerpay](https://beerpay.io/saribe/listenerjs/make-wish.svg?style=flat-square)](https://beerpay.io/saribe/listenerjs?focus=wish) [![Build Status](https://badgen.net/circleci/github/saribe/listenerjs)](https://circleci.com/gh/saribe/listenerjs) 
 [![npm package](https://badgen.net/npm/v/listenerjs)](https://www.npmjs.com/package/listenerjs) 
 [![coverage](https://badgen.net/codecov/c/github/saribe/listenerjs)](https://codecov.io/gh/saribe/listenerjs)
 
-> Event subscription made simple for JavaScript
+Hey dude! [Help](https://beerpay.io/saribe/listenerjs) me out for a couple of 🍻!
+It will provide inspiration to keep this event subscription lib sober. You can always [request](https://beerpay.io/saribe/listenerjs?focus=wish) for new functionaries.
 
-Demo ...
 
 ## Installation
 
@@ -65,11 +65,7 @@ When created an event, it will expose:
 | dispatch    | function | any                 | null         |
 | once        | function | function[, context] | { remove }   |
 
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
-
-## Support on Beerpay
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/saribe/listenerjs/badge.svg?style=beer-square)](https://beerpay.io/saribe/listenerjs)  [![Beerpay](https://beerpay.io/saribe/listenerjs/make-wish.svg?style=flat-square)](https://beerpay.io/saribe/listenerjs?focus=wish)
