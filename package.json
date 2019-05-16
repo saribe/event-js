@@ -1,0 +1,48 @@
+{
+  "name": "listenerjs",
+  "version": "0.0.0",
+  "description": "Event subscription made simple for JavaScript",
+  "main": "dist/listenerjs.cjs.js",
+  "author": {
+    "name": "saribe",
+    "email": "samuel@maispc.com"
+  },
+  "scripts": {
+    "lint": "eslint --fix --color --ext=js,html src tests *.js",
+    "lint:fix": "npm run lint -- --fix",
+    "unit": "jest",
+    "dev": "npm run unit -- --watchAll",
+    "test": "npm run lint && npm run unit",
+    "prepublishOnly": "rollit"
+  },
+  "keywords": [
+    "addListener",
+    "context",
+    "dispatch",
+    "event",
+    "light",
+    "pubSub"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^24.8.0",
+    "codecov": "^3.5.0",
+    "eslint": "^5.16.0",
+    "eslint-config-saribe": "^0.1.2",
+    "jest": "^24.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saribe/listenerjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saribe/listenerjs/issues"
+  },
+  "homepage": "https://github.com/saribe/listenerjs#readme",
+  "module": "dist/listenerjs.es.js",
+  "unpkg": "dist/listenerjs.js",
+  "browser": "dist/listenerjs.es.js"
+}

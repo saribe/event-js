@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "saribe"
+  ],
+  "env": {
+    "jest": true
+  }
+}
